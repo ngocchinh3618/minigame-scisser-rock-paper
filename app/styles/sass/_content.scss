@@ -1,0 +1,231 @@
+.content {
+  min-width: 477px;
+  color: white;
+  text-align: center;
+  margin: 80px auto;
+  letter-spacing: 2px;
+
+
+  @include mobile {
+    width: 100%;
+    margin: 20px auto;
+  }
+
+  // background-color: rgb(202, 202, 158);
+}
+
+.head {
+  border: 2px hsl(217, 16%, 45%) solid;
+  border-radius: 8px;
+  width: 50%;
+  margin: auto;
+  padding: 12px;
+  align-items: baseline;
+
+  @include mobile {
+    width: 90%;
+  }
+
+  &__left__img {
+    width: 80%;
+
+    @include mobile {
+      width: 70%;
+    }
+  }
+
+  &__right {
+    border: thin blanchedalmond solid;
+    width: 120px;
+    border-radius: 10px;
+    padding: 12px;
+    background-color: white;
+
+    @include mobile {
+      width: 100px;
+    }
+
+    &__txt {
+      color: hsl(229, 64%, 46%);
+    }
+
+    &__number {
+      font-size: $fs-52 !important;
+      color: hsl(229, 25%, 31%);
+      line-height: 12px;
+
+      @include mobile {
+        font-size: $fs-42 !important;
+      }
+    }
+  }
+}
+
+.main {
+  width: 80%;
+  margin: 80px auto;
+
+  @include mobile {
+    width: 100%;
+    margin: 100px auto;
+  }
+
+  &__top {
+    margin: auto;
+
+  }
+
+  &__box {
+    justify-content: space-around;
+
+    @include mobile {
+      margin-top: -24px !important;
+      justify-content: space-around;
+    }
+    @include pc {
+      justify-content: space-evenly;
+    }
+  }
+
+  .main__ripple {
+    border-radius: 100%;
+    height: 156px;
+    @include circle-ripple;
+
+    @include mobile {
+      height: 100px;
+    }
+
+    @include pc {
+      height: 258px;
+    }
+
+  }
+
+  &__left {
+    @include box__yellow;
+  }
+
+  .circle-blue {
+    @include box__blue;
+  }
+
+  .circle-yellow {
+    @include box__yellow;
+  }
+
+  .circle-pink {
+    @include box__pink;
+  }
+
+  .item-center1 {
+    @include mobile {
+      display: none !important;
+    }
+  }
+
+  .button1{
+    @include btn-fizzy;
+    @include mobile {
+      display: none !important;
+    }
+  }
+
+  .button2{
+    @include btn-fizzy;
+    margin-bottom: 180px;
+    display: none !important;
+
+    .animated-button1 {
+      @include mobile {
+        width: 150px;
+      }
+    }
+
+    @include mobile {
+      display: block !important;
+    }
+  }
+  .item-txt1 {
+    @include mobile {
+      display: none !important;
+    }
+  }
+
+  .item-txt2 {
+    margin-top: 80px;
+    display: none !important;
+
+    @include mobile {
+      display: flex !important;
+    }
+  }
+
+  &__center {
+
+    &__fs{
+      font-size: $fs-38;
+      @include mobile {
+        font-size: $fs-38;
+      }
+
+      @include pc {
+        font-size: 52px;
+      }
+    }
+    .btn-play {
+      @include btn-play;
+      
+      @include mobile {
+        width: 100px;
+        padding: 0 !important;
+        order: 3;
+      }
+
+      @include pc {
+        width: 200px;
+      }
+
+      &__txt {
+        text-transform: uppercase;
+
+        @include mobile {
+          font-size: $fs-14;
+          padding: 0 0 4px !important;
+        }
+
+        @include pc {
+          font-size: $fs-24;
+          letter-spacing: 3px;
+        }
+      }
+    }
+  }
+
+  &__right {
+    @include box__blue;
+  }
+
+  // modal
+
+
+  &__bottom {
+    position: absolute;
+    right: 28px;
+    bottom: 20px;
+
+    @include mobile {
+      position: relative;
+      right: 0;
+      margin-top: 100px;
+    }
+  }
+
+  // content playing
+
+}
+
+.modal-header {
+  color: $DarkBlue-400 !important;
+  background-color: $gray-200;
+}

@@ -1,0 +1,2467 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap");
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+body {
+  margin: 0;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  text-transform: uppercase;
+  background-color: #192444; }
+
+main {
+  display: block; }
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+a {
+  background-color: transparent; }
+
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */ }
+
+b,
+strong {
+  font-weight: bolder; }
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+small {
+  font-size: 80%; }
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+img {
+  border-style: none; }
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0; }
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; }
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em; }
+
+legend {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal; }
+
+progress {
+  vertical-align: baseline; }
+
+textarea {
+  overflow: auto; }
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+details {
+  display: block; }
+
+summary {
+  display: list-item; }
+
+template {
+  display: none; }
+
+[hidden] {
+  display: none; }
+
+.animated-button1 {
+  border-radius: 8px;
+  background: linear-gradient(-30deg, white 50%, #e2e7f7 50%);
+  display: inline-block;
+  -webkit-transform: translate(0%, 0%);
+  transform: translate(0%, 0%);
+  overflow: hidden;
+  color: #f7d4d4;
+  font-size: 20px;
+  letter-spacing: 2.5px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  -webkit-box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5); }
+  .animated-button1::before {
+    content: '';
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    -webkit-transition: .2s opacity ease-in-out;
+    transition: .2s opacity ease-in-out; }
+  .animated-button1:hover::before {
+    opacity: 0.2; }
+  .animated-button1 span {
+    position: absolute; }
+  .animated-button1 span:nth-child(1) {
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 4px;
+    background: -webkit-gradient(linear, right top, left top, from(rgba(43, 8, 8, 0)), to(red));
+    background: linear-gradient(to left, rgba(43, 8, 8, 0), #75D6FB);
+    -webkit-animation: 2s animateTop linear infinite;
+    animation: 2s animateTop linear infinite; }
+
+@keyframes animateTop {
+  0% {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%); }
+  100% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%); } }
+  .animated-button1 span:nth-child(2) {
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    width: 4px;
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(43, 8, 8, 0)), to(#75D6FB));
+    background: linear-gradient(to top, rgba(43, 8, 8, 0), #75D6FB);
+    -webkit-animation: 2s animateRight linear -1s infinite;
+    animation: 2s animateRight linear -1s infinite; }
+
+@keyframes animateRight {
+  0% {
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%); }
+  100% {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%); } }
+  .animated-button1 span:nth-child(3) {
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 4px;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(43, 8, 8, 0)), to(#75D6FB));
+    background: linear-gradient(to right, rgba(43, 8, 8, 0), #75D6FB);
+    -webkit-animation: 2s animateBottom linear infinite;
+    animation: 2s animateBottom linear infinite; }
+
+@keyframes animateBottom {
+  0% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%); }
+  100% {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%); } }
+  .animated-button1 span:nth-child(4) {
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 4px;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(43, 8, 8, 0)), to(#75D6FB));
+    background: linear-gradient(to bottom, rgba(43, 8, 8, 0), #75D6FB);
+    -webkit-animation: 2s animateLeft linear -1s infinite;
+    animation: 2s animateLeft linear -1s infinite; }
+
+@keyframes animateLeft {
+  0% {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%); }
+  100% {
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%); } }
+
+.btn:focus, .btn-close:focus {
+  box-shadow: none !important; }
+
+.btn-lightning {
+  overflow: hidden;
+  position: relative;
+  border: thin white solid;
+  color: white;
+  width: 120px;
+  border-radius: 6px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  padding: 4px 8px; }
+  .btn-lightning:after {
+    background: #536EF7;
+    content: "";
+    height: 240px;
+    left: -126px;
+    opacity: .2;
+    position: absolute;
+    top: -96px;
+    transform: rotate(60deg);
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+    width: 50px;
+    z-index: -10; }
+
+.btn-lightning:hover {
+  color: white; }
+  .btn-lightning:hover:after {
+    left: 148%;
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1); }
+
+@keyframes spot-1 {
+  from {
+    opacity: 0; }
+  to {
+    transform: translateY(30px) translatex(-18px);
+    opacity: .6; } }
+
+@keyframes spot-2 {
+  from {
+    opacity: 0; }
+  to {
+    transform: translateY(30px) translatex(-16px);
+    opacity: .6; } }
+
+@keyframes spot-3 {
+  from {
+    opacity: 0; }
+  to {
+    transform: translateY(30px) translatex(-14px);
+    opacity: .6; } }
+
+@keyframes spot-4 {
+  from {
+    opacity: 0; }
+  to {
+    transform: translateY(30px) translatex(-12px);
+    opacity: .6; } }
+
+@keyframes spot-5 {
+  from {
+    opacity: 0; }
+  to {
+    transform: translateY(30px) translatex(-10px);
+    opacity: .6; } }
+
+@keyframes spot-6 {
+  from {
+    opacity: 0; }
+  to {
+    transform: translateY(30px) translatex(-8px);
+    opacity: .6; } }
+
+@keyframes spot-7 {
+  from {
+    opacity: 0; }
+  to {
+    transform: translateY(30px) translatex(-6px);
+    opacity: .6; } }
+
+@keyframes spot-8 {
+  from {
+    opacity: 0; }
+  to {
+    transform: translateY(30px) translatex(-4px);
+    opacity: .6; } }
+
+@keyframes spot-9 {
+  from {
+    opacity: 0; }
+  to {
+    transform: translateY(30px) translatex(-2px);
+    opacity: .6; } }
+
+@keyframes spot-10 {
+  from {
+    opacity: 0; }
+  to {
+    transform: translateY(30px) translatex(0px);
+    opacity: .6; } }
+
+@keyframes spot-11 {
+  from {
+    opacity: 0; }
+  to {
+    transform: translateY(30px) translatex(2px);
+    opacity: .6; } }
+
+@keyframes spot-12 {
+  from {
+    opacity: 0; }
+  to {
+    transform: translateY(30px) translatex(4px);
+    opacity: .6; } }
+
+@keyframes spot-13 {
+  from {
+    opacity: 0; }
+  to {
+    transform: translateY(30px) translatex(6px);
+    opacity: .6; } }
+
+@keyframes spot-14 {
+  from {
+    opacity: 0; }
+  to {
+    transform: translateY(30px) translatex(8px);
+    opacity: .6; } }
+
+@keyframes spot-15 {
+  from {
+    opacity: 0; }
+  to {
+    transform: translateY(30px) translatex(10px);
+    opacity: .6; } }
+
+@keyframes spot-16 {
+  from {
+    opacity: 0; }
+  to {
+    transform: translateY(30px) translatex(12px);
+    opacity: .6; } }
+
+@keyframes spot-17 {
+  from {
+    opacity: 0; }
+  to {
+    transform: translateY(30px) translatex(14px);
+    opacity: .6; } }
+
+@keyframes spot-18 {
+  from {
+    opacity: 0; }
+  to {
+    transform: translateY(30px) translatex(16px);
+    opacity: .6; } }
+
+@keyframes spot-19 {
+  from {
+    opacity: 0; }
+  to {
+    transform: translateY(30px) translatex(18px);
+    opacity: .6; } }
+
+@keyframes spot-20 {
+  from {
+    opacity: 0; }
+  to {
+    transform: translateY(30px) translatex(20px);
+    opacity: .6; } }
+
+@keyframes spot-20 {
+  from {
+    opacity: 0; }
+  to {
+    transform: translateY(-30px) translatex(-10px);
+    opacity: .6; } }
+
+@keyframes spot-21 {
+  from {
+    opacity: 0; }
+  to {
+    transform: translateY(-30px) translatex(-8px);
+    opacity: .6; } }
+
+@keyframes spot-22 {
+  from {
+    opacity: 0; }
+  to {
+    transform: translateY(-30px) translatex(-6px);
+    opacity: .6; } }
+
+@keyframes spot-23 {
+  from {
+    opacity: 0; }
+  to {
+    transform: translateY(-30px) translatex(-4px);
+    opacity: .6; } }
+
+@keyframes spot-24 {
+  from {
+    opacity: 0; }
+  to {
+    transform: translateY(-30px) translatex(-2px);
+    opacity: .6; } }
+
+@keyframes spot-25 {
+  from {
+    opacity: 0; }
+  to {
+    transform: translateY(-30px) translatex(0px);
+    opacity: .6; } }
+
+@keyframes spot-26 {
+  from {
+    opacity: 0; }
+  to {
+    transform: translateY(-30px) translatex(2px);
+    opacity: .6; } }
+
+@keyframes spot-27 {
+  from {
+    opacity: 0; }
+  to {
+    transform: translateY(-30px) translatex(4px);
+    opacity: .6; } }
+
+@keyframes spot-28 {
+  from {
+    opacity: 0; }
+  to {
+    transform: translateY(-30px) translatex(6px);
+    opacity: .6; } }
+
+@keyframes spot-29 {
+  from {
+    opacity: 0; }
+  to {
+    transform: translateY(-30px) translatex(8px);
+    opacity: .6; } }
+
+@keyframes spot-30 {
+  from {
+    opacity: 0; }
+  to {
+    transform: translateY(-30px) translatex(10px);
+    opacity: .6; } }
+
+@keyframes spot-31 {
+  from {
+    opacity: 0; }
+  to {
+    transform: translateY(-30px) translatex(12px);
+    opacity: .6; } }
+
+@keyframes spot-32 {
+  from {
+    opacity: 0; }
+  to {
+    transform: translateY(-30px) translatex(14px);
+    opacity: .6; } }
+
+@keyframes spot-33 {
+  from {
+    opacity: 0; }
+  to {
+    transform: translateY(-30px) translatex(16px);
+    opacity: .6; } }
+
+@keyframes spot-34 {
+  from {
+    opacity: 0; }
+  to {
+    transform: translateY(-30px) translatex(18px);
+    opacity: .6; } }
+
+@keyframes spot-35 {
+  from {
+    opacity: 0; }
+  to {
+    transform: translateY(-30px) translatex(20px);
+    opacity: .6; } }
+
+@keyframes spot-36 {
+  from {
+    opacity: 0; }
+  to {
+    transform: translateY(-30px) translatex(22px);
+    opacity: .6; } }
+
+@keyframes spot-37 {
+  from {
+    opacity: 0; }
+  to {
+    transform: translateY(-30px) translatex(24px);
+    opacity: .6; } }
+
+@keyframes spot-38 {
+  from {
+    opacity: 0; }
+  to {
+    transform: translateY(-30px) translatex(26px);
+    opacity: .6; } }
+
+@keyframes spot-39 {
+  from {
+    opacity: 0; }
+  to {
+    transform: translateY(-30px) translatex(28px);
+    opacity: .6; } }
+
+@keyframes spot-40 {
+  from {
+    opacity: 0; }
+  to {
+    transform: translateY(-30px) translatex(30px);
+    opacity: .6; } }
+
+@keyframes spot-40 {
+  from {
+    opacity: 0; }
+  to {
+    transform: translateY(-6px) translatex(40px);
+    opacity: .6; } }
+
+@keyframes spot-41 {
+  from {
+    opacity: 0; }
+  to {
+    transform: translateY(-4px) translatex(40px);
+    opacity: .6; } }
+
+@keyframes spot-42 {
+  from {
+    opacity: 0; }
+  to {
+    transform: translateY(-2px) translatex(40px);
+    opacity: .6; } }
+
+@keyframes spot-43 {
+  from {
+    opacity: 0; }
+  to {
+    transform: translateY(0px) translatex(40px);
+    opacity: .6; } }
+
+@keyframes spot-44 {
+  from {
+    opacity: 0; }
+  to {
+    transform: translateY(2px) translatex(40px);
+    opacity: .6; } }
+
+@keyframes spot-45 {
+  from {
+    opacity: 0; }
+  to {
+    transform: translateY(4px) translatex(40px);
+    opacity: .6; } }
+
+@keyframes spot-46 {
+  from {
+    opacity: 0; }
+  to {
+    transform: translateY(-7px) translatex(-40px);
+    opacity: .6; } }
+
+@keyframes spot-47 {
+  from {
+    opacity: 0; }
+  to {
+    transform: translateY(-5px) translatex(-40px);
+    opacity: .6; } }
+
+@keyframes spot-48 {
+  from {
+    opacity: 0; }
+  to {
+    transform: translateY(-3px) translatex(-40px);
+    opacity: .6; } }
+
+@keyframes spot-49 {
+  from {
+    opacity: 0; }
+  to {
+    transform: translateY(-1px) translatex(-40px);
+    opacity: .6; } }
+
+@keyframes spot-50 {
+  from {
+    opacity: 0; }
+  to {
+    transform: translateY(1px) translatex(-40px);
+    opacity: .6; } }
+
+@keyframes spot-51 {
+  from {
+    opacity: 0; }
+  to {
+    transform: translateY(3px) translatex(-40px);
+    opacity: .6; } }
+
+@keyframes spot-52 {
+  from {
+    opacity: 0; }
+  to {
+    transform: translateY(5px) translatex(-40px);
+    opacity: .6; } }
+
+@keyframes spot-53 {
+  from {
+    opacity: 0; }
+  to {
+    transform: translateY(7px) translatex(-40px);
+    opacity: .6; } }
+
+@keyframes spot-54 {
+  from {
+    opacity: 0; }
+  to {
+    transform: translateY(9px) translatex(-40px);
+    opacity: .6; } }
+
+@keyframes opacity {
+  from { }
+  to {
+    opacity: 0; } }
+
+@keyframes rotate {
+  from {
+    opacity: .8; }
+  to {
+    transform: rotate(360deg);
+    opacity: .8; } }
+
+@keyframes down {
+  from {
+    left: 10px; }
+  to {
+    left: 57px; } }
+
+@keyframes spew {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 0.8; } }
+
+@keyframes final {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
+
+@keyframes finalbox {
+  from { }
+  to {
+    width: 50px; } }
+
+@keyframes tick {
+  from { }
+  to {
+    transform: scale(1) rotate(-90deg); } }
+
+.article {
+  margin: auto;
+  height: 410px;
+  width: 450px;
+  position: relative;
+  background-image: url(../../../images/bg-triangle.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 400px 340px;
+  flex-wrap: wrap; }
+  @media (min-width: 375px) and (max-width: 767px) {
+    .article {
+      padding: 80px;
+      width: 300px;
+      height: 280px;
+      background-size: 312px 264px; } }
+  .article__left {
+    position: absolute;
+    left: 4px;
+    cursor: pointer;
+    background-color: #EFEFEF;
+    width: 150px;
+    height: 150px;
+    border: solid 20px #536EF7;
+    box-shadow: 0px 6px #2945C3;
+    -moz-box-shadow: 0px 6px #2945C3;
+    -webkit-box-shadow: 0px 6px #2945C3;
+    -o-box-shadow: 0px 6px #2945C3;
+    border-radius: 100%; }
+    @media (min-width: 375px) and (max-width: 767px) {
+      .article__left {
+        width: 100px;
+        height: 100px;
+        border: solid 16px #536EF7;
+        box-shadow: 0px 4px #2945C3;
+        -moz-box-shadow: 0px 4px #2945C3;
+        -webkit-box-shadow: 0px 4px #2945C3;
+        -o-box-shadow: 0px 4px #2945C3; } }
+    .article__left .main__circle__bd {
+      width: 110px;
+      box-shadow: inset 0px 6px 0px #BAC0D5;
+      padding: 24px;
+      border-radius: 100%; }
+      @media (min-width: 375px) and (max-width: 767px) {
+        .article__left .main__circle__bd {
+          width: initial;
+          box-shadow: inset 0px 4px 0px #BAC0D5;
+          padding: 12px; } }
+    @media (min-width: 375px) and (max-width: 767px) {
+      .article__left .main__circle__img {
+        width: 40px; } }
+    @media (min-width: 375px) and (max-width: 767px) {
+      .article__left {
+        left: -16px;
+        top: -28px; } }
+  .article__center {
+    bottom: 0px;
+    position: absolute;
+    cursor: pointer;
+    background-color: #EFEFEF;
+    width: 150px;
+    height: 150px;
+    border: solid 20px #DB2D4D;
+    box-shadow: 0px 6px #9D1732;
+    -moz-box-shadow: 0px 6px #9D1732;
+    -webkit-box-shadow: 0px 6px #9D1732;
+    -o-box-shadow: 0px 6px #9D1732;
+    border-radius: 100%; }
+    @media (min-width: 375px) and (max-width: 767px) {
+      .article__center {
+        width: 100px;
+        height: 100px;
+        border: solid 16px #DB2D4D;
+        box-shadow: 0px 4px #9D1732;
+        -moz-box-shadow: 0px 4px #9D1732;
+        -webkit-box-shadow: 0px 4px #9D1732;
+        -o-box-shadow: 0px 4px #9D1732; } }
+    .article__center .main__circle__bd {
+      width: 110px;
+      box-shadow: inset 0px 6px 0px #BAC0D5;
+      padding: 24px;
+      border-radius: 100%; }
+      @media (min-width: 375px) and (max-width: 767px) {
+        .article__center .main__circle__bd {
+          width: initial;
+          box-shadow: inset 0px 4px 0px #BAC0D5;
+          padding: 12px; } }
+    @media (min-width: 375px) and (max-width: 767px) {
+      .article__center .main__circle__img {
+        width: 40px; } }
+    @media (min-width: 375px) and (max-width: 767px) {
+      .article__center {
+        bottom: 0; } }
+  .article__right {
+    right: 4px;
+    position: absolute;
+    cursor: pointer;
+    background-color: #EFEFEF;
+    width: 150px;
+    height: 150px;
+    border: solid 20px #EDA51D;
+    box-shadow: 0px 6px #C66B19;
+    -moz-box-shadow: 0px 6px #C66B19;
+    -webkit-box-shadow: 0px 6px #C66B19;
+    -o-box-shadow: 0px 6px #C66B19;
+    border-radius: 100%; }
+    @media (min-width: 375px) and (max-width: 767px) {
+      .article__right {
+        width: 100px;
+        height: 100px;
+        border: solid 16px #EDA51D;
+        box-shadow: 0px 4px #C66B19;
+        -moz-box-shadow: 0px 4px #C66B19;
+        -webkit-box-shadow: 0px 4px #C66B19;
+        -o-box-shadow: 0px 4px #C66B19; } }
+    .article__right .main__circle__bd {
+      width: 110px;
+      box-shadow: inset 0px 6px 0px #BAC0D5;
+      padding: 24px;
+      border-radius: 100%; }
+      @media (min-width: 375px) and (max-width: 767px) {
+        .article__right .main__circle__bd {
+          width: initial;
+          box-shadow: inset 0px 4px 0px #BAC0D5;
+          padding: 12px; } }
+    @media (min-width: 375px) and (max-width: 767px) {
+      .article__right .main__circle__img {
+        width: 40px; } }
+    @media (min-width: 375px) and (max-width: 767px) {
+      .article__right {
+        right: -16px;
+        top: -28px; } }
+
+.content {
+  min-width: 477px;
+  color: white;
+  text-align: center;
+  margin: 80px auto;
+  letter-spacing: 2px; }
+  @media (min-width: 375px) and (max-width: 767px) {
+    .content {
+      width: 100%;
+      margin: 20px auto; } }
+
+.head {
+  border: 2px #606e85 solid;
+  border-radius: 8px;
+  width: 50%;
+  margin: auto;
+  padding: 12px;
+  align-items: baseline; }
+  @media (min-width: 375px) and (max-width: 767px) {
+    .head {
+      width: 90%; } }
+  .head__left__img {
+    width: 80%; }
+    @media (min-width: 375px) and (max-width: 767px) {
+      .head__left__img {
+        width: 70%; } }
+  .head__right {
+    border: thin blanchedalmond solid;
+    width: 120px;
+    border-radius: 10px;
+    padding: 12px;
+    background-color: white; }
+    @media (min-width: 375px) and (max-width: 767px) {
+      .head__right {
+        width: 100px; } }
+    .head__right__txt {
+      color: #2a46c0; }
+    .head__right__number {
+      font-size: 52px !important;
+      color: #3b4363;
+      line-height: 12px; }
+      @media (min-width: 375px) and (max-width: 767px) {
+        .head__right__number {
+          font-size: 42px !important; } }
+
+.main {
+  width: 80%;
+  margin: 80px auto; }
+  @media (min-width: 375px) and (max-width: 767px) {
+    .main {
+      width: 100%;
+      margin: 100px auto; } }
+  .main__top {
+    margin: auto; }
+  .main__box {
+    justify-content: space-around; }
+    @media (min-width: 375px) and (max-width: 767px) {
+      .main__box {
+        margin-top: -24px !important;
+        justify-content: space-around; } }
+    @media (min-width: 1366px) {
+      .main__box {
+        justify-content: space-evenly; } }
+  .main .main__ripple {
+    border-radius: 100%;
+    height: 156px;
+    animation: ripple 0.8s linear infinite; }
+
+@keyframes ripple {
+  0% {
+    box-shadow: 0 0 0 0 rgba(60, 66, 98, 0.3), 0 0 0 1em rgba(60, 66, 98, 0.3), 0 0 0 3em rgba(60, 66, 98, 0.3), 0 0 0 5em rgba(60, 66, 98, 0.3); }
+  100% {
+    box-shadow: 0 0 0 1em rgba(60, 66, 98, 0.3), 0 0 0 3em rgba(60, 66, 98, 0.3), 0 0 0 5em rgba(60, 66, 98, 0.3), 0 0 0 8em rgba(60, 66, 98, 0); } }
+    @media (min-width: 375px) and (max-width: 767px) {
+      .main .main__ripple {
+        height: 100px; } }
+    @media (min-width: 1366px) {
+      .main .main__ripple {
+        height: 258px; } }
+  .main__left {
+    background-color: #EFEFEF;
+    width: 150px;
+    height: 150px;
+    border: solid 20px #EDA51D;
+    box-shadow: 0px 6px #C66B19;
+    -moz-box-shadow: 0px 6px #C66B19;
+    -webkit-box-shadow: 0px 6px #C66B19;
+    -o-box-shadow: 0px 6px #C66B19;
+    border-radius: 100%; }
+    @media (min-width: 375px) and (max-width: 767px) {
+      .main__left {
+        width: 100px;
+        height: 100px;
+        border: solid 16px #EDA51D;
+        box-shadow: 0px 4px #C66B19;
+        -moz-box-shadow: 0px 4px #C66B19;
+        -webkit-box-shadow: 0px 4px #C66B19;
+        -o-box-shadow: 0px 4px #C66B19; } }
+    @media (min-width: 1366px) {
+      .main__left {
+        width: 250px;
+        height: 250px;
+        border: solid 26px #EDA51D;
+        box-shadow: 0px 8px #C66B19;
+        -moz-box-shadow: 0px 8px #C66B19;
+        -webkit-box-shadow: 0px 8px #C66B19;
+        -o-box-shadow: 0px 8px #C66B19; } }
+    .main__left .main__circle__bd {
+      width: 110px;
+      box-shadow: inset 0px 6px 0px #BAC0D5;
+      padding: 24px;
+      border-radius: 100%; }
+      @media (min-width: 375px) and (max-width: 767px) {
+        .main__left .main__circle__bd {
+          width: initial;
+          box-shadow: inset 0px 4px 0px #BAC0D5;
+          padding: 12px; } }
+      @media (min-width: 1366px) {
+        .main__left .main__circle__bd {
+          width: 198px;
+          box-shadow: inset 0px 8px 0px #BAC0D5;
+          padding: 50px 68px 48px 52px; } }
+    @media (min-width: 375px) and (max-width: 767px) {
+      .main__left .main__circle__img {
+        width: 40px; } }
+    @media (min-width: 1366px) {
+      .main__left .main__circle__img {
+        width: 80px; } }
+  .main .circle-blue {
+    background-color: #EFEFEF;
+    width: 150px;
+    height: 150px;
+    border: solid 20px #536EF7;
+    box-shadow: 0px 6px #2945C3;
+    -moz-box-shadow: 0px 6px #2945C3;
+    -webkit-box-shadow: 0px 6px #2945C3;
+    -o-box-shadow: 0px 6px #2945C3;
+    border-radius: 100%; }
+    @media (min-width: 375px) and (max-width: 767px) {
+      .main .circle-blue {
+        width: 100px;
+        height: 100px;
+        border: solid 16px #536EF7;
+        box-shadow: 0px 4px #2945C3;
+        -moz-box-shadow: 0px 4px #2945C3;
+        -webkit-box-shadow: 0px 4px #2945C3;
+        -o-box-shadow: 0px 4px #2945C3; } }
+    @media (min-width: 1366px) {
+      .main .circle-blue {
+        width: 250px;
+        height: 250px;
+        border: solid 26px #536EF7;
+        box-shadow: 0px 8px #2945C3;
+        -moz-box-shadow: 0px 8px #2945C3;
+        -webkit-box-shadow: 0px 8px #2945C3;
+        -o-box-shadow: 0px 8px #2945C3; } }
+    .main .circle-blue .main__circle__bd {
+      width: 110px;
+      box-shadow: inset 0px 6px 0px #BAC0D5;
+      padding: 24px;
+      border-radius: 100%; }
+      @media (min-width: 375px) and (max-width: 767px) {
+        .main .circle-blue .main__circle__bd {
+          width: initial;
+          box-shadow: inset 0px 4px 0px #BAC0D5;
+          padding: 12px; } }
+      @media (min-width: 1366px) {
+        .main .circle-blue .main__circle__bd {
+          width: 198px;
+          box-shadow: inset 0px 8px 0px #BAC0D5;
+          padding: 50px 68px 48px 52px; } }
+    @media (min-width: 375px) and (max-width: 767px) {
+      .main .circle-blue .main__circle__img {
+        width: 40px; } }
+    @media (min-width: 1366px) {
+      .main .circle-blue .main__circle__img {
+        width: 80px; } }
+  .main .circle-yellow {
+    background-color: #EFEFEF;
+    width: 150px;
+    height: 150px;
+    border: solid 20px #EDA51D;
+    box-shadow: 0px 6px #C66B19;
+    -moz-box-shadow: 0px 6px #C66B19;
+    -webkit-box-shadow: 0px 6px #C66B19;
+    -o-box-shadow: 0px 6px #C66B19;
+    border-radius: 100%; }
+    @media (min-width: 375px) and (max-width: 767px) {
+      .main .circle-yellow {
+        width: 100px;
+        height: 100px;
+        border: solid 16px #EDA51D;
+        box-shadow: 0px 4px #C66B19;
+        -moz-box-shadow: 0px 4px #C66B19;
+        -webkit-box-shadow: 0px 4px #C66B19;
+        -o-box-shadow: 0px 4px #C66B19; } }
+    @media (min-width: 1366px) {
+      .main .circle-yellow {
+        width: 250px;
+        height: 250px;
+        border: solid 26px #EDA51D;
+        box-shadow: 0px 8px #C66B19;
+        -moz-box-shadow: 0px 8px #C66B19;
+        -webkit-box-shadow: 0px 8px #C66B19;
+        -o-box-shadow: 0px 8px #C66B19; } }
+    .main .circle-yellow .main__circle__bd {
+      width: 110px;
+      box-shadow: inset 0px 6px 0px #BAC0D5;
+      padding: 24px;
+      border-radius: 100%; }
+      @media (min-width: 375px) and (max-width: 767px) {
+        .main .circle-yellow .main__circle__bd {
+          width: initial;
+          box-shadow: inset 0px 4px 0px #BAC0D5;
+          padding: 12px; } }
+      @media (min-width: 1366px) {
+        .main .circle-yellow .main__circle__bd {
+          width: 198px;
+          box-shadow: inset 0px 8px 0px #BAC0D5;
+          padding: 50px 68px 48px 52px; } }
+    @media (min-width: 375px) and (max-width: 767px) {
+      .main .circle-yellow .main__circle__img {
+        width: 40px; } }
+    @media (min-width: 1366px) {
+      .main .circle-yellow .main__circle__img {
+        width: 80px; } }
+  .main .circle-pink {
+    background-color: #EFEFEF;
+    width: 150px;
+    height: 150px;
+    border: solid 20px #DB2D4D;
+    box-shadow: 0px 6px #9D1732;
+    -moz-box-shadow: 0px 6px #9D1732;
+    -webkit-box-shadow: 0px 6px #9D1732;
+    -o-box-shadow: 0px 6px #9D1732;
+    border-radius: 100%; }
+    @media (min-width: 375px) and (max-width: 767px) {
+      .main .circle-pink {
+        width: 100px;
+        height: 100px;
+        border: solid 16px #DB2D4D;
+        box-shadow: 0px 4px #9D1732;
+        -moz-box-shadow: 0px 4px #9D1732;
+        -webkit-box-shadow: 0px 4px #9D1732;
+        -o-box-shadow: 0px 4px #9D1732; } }
+    @media (min-width: 1366px) {
+      .main .circle-pink {
+        width: 250px;
+        height: 250px;
+        border: solid 26px #DB2D4D;
+        box-shadow: 0px 8px #9D1732;
+        -moz-box-shadow: 0px 8px #9D1732;
+        -webkit-box-shadow: 0px 8px #9D1732;
+        -o-box-shadow: 0px 8px #9D1732; } }
+    .main .circle-pink .main__circle__bd {
+      width: 110px;
+      box-shadow: inset 0px 6px 0px #BAC0D5;
+      padding: 24px;
+      border-radius: 100%; }
+      @media (min-width: 375px) and (max-width: 767px) {
+        .main .circle-pink .main__circle__bd {
+          width: initial;
+          box-shadow: inset 0px 4px 0px #BAC0D5;
+          padding: 12px; } }
+      @media (min-width: 1366px) {
+        .main .circle-pink .main__circle__bd {
+          width: 198px;
+          box-shadow: inset 0px 8px 0px #BAC0D5;
+          padding: 50px 68px 48px 52px; } }
+    @media (min-width: 375px) and (max-width: 767px) {
+      .main .circle-pink .main__circle__img {
+        width: 40px; } }
+    @media (min-width: 1366px) {
+      .main .circle-pink .main__circle__img {
+        width: 80px; } }
+  @media (min-width: 375px) and (max-width: 767px) {
+    .main .item-center1 {
+      display: none !important; } }
+  .main .button1 .b_l_quad .button_spots:nth-child(1) {
+    padding: 5px;
+    left: 32px;
+    top: 100px; }
+  .main .button1 .b_l_quad .button_spots:nth-child(2) {
+    padding: 3px;
+    left: 44px;
+    top: 100px; }
+  .main .button1 .b_l_quad .button_spots:nth-child(3) {
+    padding: 4px;
+    left: 56px;
+    top: 100px; }
+  .main .button1 .b_l_quad .button_spots:nth-child(4) {
+    padding: 5px;
+    left: 68px;
+    top: 100px; }
+  .main .button1 .b_l_quad .button_spots:nth-child(5) {
+    padding: 4px;
+    left: 80px;
+    top: 100px; }
+  .main .button1 .b_l_quad .button_spots:nth-child(6) {
+    padding: 5px;
+    left: 92px;
+    top: 100px; }
+  .main .button1 .b_l_quad .button_spots:nth-child(7) {
+    padding: 5px;
+    left: 104px;
+    top: 100px; }
+  .main .button1 .b_l_quad .button_spots:nth-child(8) {
+    padding: 4px;
+    left: 116px;
+    top: 100px; }
+  .main .button1 .b_l_quad .button_spots:nth-child(9) {
+    padding: 4px;
+    left: 128px;
+    top: 100px; }
+  .main .button1 .b_l_quad .button_spots:nth-child(10) {
+    padding: 3px;
+    left: 140px;
+    top: 100px; }
+  .main .button1 .b_l_quad .button_spots:nth-child(11) {
+    padding: 3px;
+    left: 152px;
+    top: 100px; }
+  .main .button1 .b_l_quad .button_spots:nth-child(12) {
+    padding: 5px;
+    left: 164px;
+    top: 100px; }
+  .main .button1 .b_l_quad .button_spots:nth-child(13) {
+    padding: 3px;
+    left: 176px;
+    top: 100px; }
+  .main .button1 .b_l_quad .button_spots:nth-child(14) {
+    padding: 3px;
+    left: 188px;
+    top: 100px; }
+  .main .button1 .b_l_quad .button_spots:nth-child(15) {
+    padding: 5px;
+    left: 200px;
+    top: 100px; }
+  .main .button1 .b_l_quad .button_spots:nth-child(16) {
+    padding: 4px;
+    left: 212px;
+    top: 100px; }
+  .main .button1 .b_l_quad .button_spots:nth-child(17) {
+    padding: 3px;
+    left: 224px;
+    top: 100px; }
+  .main .button1 .b_l_quad .button_spots:nth-child(18) {
+    padding: 3px;
+    left: 236px;
+    top: 100px; }
+  .main .button1 .b_l_quad .button_spots:nth-child(19) {
+    padding: 3px;
+    left: 248px;
+    top: 100px; }
+  .main .button1 .b_l_quad .button_spots:nth-child(20) {
+    padding: 3px;
+    left: 260px;
+    top: 100px; }
+  .main .button1 .b_l_quad .button_spots:nth-child(20) {
+    padding: 3px;
+    left: 40px;
+    top: 30px; }
+  .main .button1 .b_l_quad .button_spots:nth-child(21) {
+    padding: 5px;
+    left: 52px;
+    top: 30px; }
+  .main .button1 .b_l_quad .button_spots:nth-child(22) {
+    padding: 5px;
+    left: 64px;
+    top: 30px; }
+  .main .button1 .b_l_quad .button_spots:nth-child(23) {
+    padding: 3px;
+    left: 76px;
+    top: 30px; }
+  .main .button1 .b_l_quad .button_spots:nth-child(24) {
+    padding: 4px;
+    left: 88px;
+    top: 30px; }
+  .main .button1 .b_l_quad .button_spots:nth-child(25) {
+    padding: 5px;
+    left: 100px;
+    top: 30px; }
+  .main .button1 .b_l_quad .button_spots:nth-child(26) {
+    padding: 5px;
+    left: 112px;
+    top: 30px; }
+  .main .button1 .b_l_quad .button_spots:nth-child(27) {
+    padding: 5px;
+    left: 124px;
+    top: 30px; }
+  .main .button1 .b_l_quad .button_spots:nth-child(28) {
+    padding: 4px;
+    left: 136px;
+    top: 30px; }
+  .main .button1 .b_l_quad .button_spots:nth-child(29) {
+    padding: 3px;
+    left: 148px;
+    top: 30px; }
+  .main .button1 .b_l_quad .button_spots:nth-child(30) {
+    padding: 3px;
+    left: 160px;
+    top: 30px; }
+  .main .button1 .b_l_quad .button_spots:nth-child(31) {
+    padding: 3px;
+    left: 172px;
+    top: 30px; }
+  .main .button1 .b_l_quad .button_spots:nth-child(32) {
+    padding: 5px;
+    left: 184px;
+    top: 30px; }
+  .main .button1 .b_l_quad .button_spots:nth-child(33) {
+    padding: 4px;
+    left: 196px;
+    top: 30px; }
+  .main .button1 .b_l_quad .button_spots:nth-child(34) {
+    padding: 4px;
+    left: 208px;
+    top: 30px; }
+  .main .button1 .b_l_quad .button_spots:nth-child(35) {
+    padding: 4px;
+    left: 220px;
+    top: 30px; }
+  .main .button1 .b_l_quad .button_spots:nth-child(36) {
+    padding: 3px;
+    left: 232px;
+    top: 30px; }
+  .main .button1 .b_l_quad .button_spots:nth-child(37) {
+    padding: 4px;
+    left: 244px;
+    top: 30px; }
+  .main .button1 .b_l_quad .button_spots:nth-child(38) {
+    padding: 5px;
+    left: 256px;
+    top: 30px; }
+  .main .button1 .b_l_quad .button_spots:nth-child(39) {
+    padding: 4px;
+    left: 268px;
+    top: 30px; }
+  .main .button1 .b_l_quad .button_spots:nth-child(40) {
+    padding: 4px;
+    left: 280px;
+    top: 30px; }
+  .main .button1 .b_l_quad .button_spots:nth-child(40) {
+    padding: 4px;
+    left: 240px;
+    top: 30px; }
+  .main .button1 .b_l_quad .button_spots:nth-child(41) {
+    padding: 3px;
+    left: 240px;
+    top: 42px; }
+  .main .button1 .b_l_quad .button_spots:nth-child(42) {
+    padding: 4px;
+    left: 240px;
+    top: 54px; }
+  .main .button1 .b_l_quad .button_spots:nth-child(43) {
+    padding: 4px;
+    left: 240px;
+    top: 66px; }
+  .main .button1 .b_l_quad .button_spots:nth-child(44) {
+    padding: 4px;
+    left: 240px;
+    top: 78px; }
+  .main .button1 .b_l_quad .button_spots:nth-child(45) {
+    padding: 4px;
+    left: 240px;
+    top: 90px; }
+  .main .button1 .b_l_quad .button_spots:nth-child(46) {
+    padding: 5px;
+    left: 240px;
+    top: 102px; }
+  .main .button1 .b_l_quad .button_spots:nth-child(46) {
+    padding: 4px;
+    left: 60px;
+    top: 2px; }
+  .main .button1 .b_l_quad .button_spots:nth-child(47) {
+    padding: 3px;
+    left: 60px;
+    top: 14px; }
+  .main .button1 .b_l_quad .button_spots:nth-child(48) {
+    padding: 4px;
+    left: 60px;
+    top: 26px; }
+  .main .button1 .b_l_quad .button_spots:nth-child(49) {
+    padding: 5px;
+    left: 60px;
+    top: 38px; }
+  .main .button1 .b_l_quad .button_spots:nth-child(50) {
+    padding: 4px;
+    left: 60px;
+    top: 50px; }
+  .main .button1 .b_l_quad .button_spots:nth-child(51) {
+    padding: 4px;
+    left: 60px;
+    top: 62px; }
+  .main .button1 .b_l_quad .button_spots:nth-child(52) {
+    padding: 3px;
+    left: 60px;
+    top: 74px; }
+  .main .button1 .button_spots {
+    position: absolute;
+    border-radius: 100px;
+    background: green;
+    opacity: 0;
+    animation: opacity 1s; }
+    .main .button1 .button_spots:nth-of-type(1) {
+      transform-origin: 87px 11px;
+      background: #74cad8;
+      box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+      transition: all 1.9s; }
+    .main .button1 .button_spots:nth-of-type(2) {
+      transform-origin: 87px 15px;
+      background: #7cd0ce;
+      box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+      transition: all 1.4s; }
+    .main .button1 .button_spots:nth-of-type(3) {
+      transform-origin: 86px 13px;
+      background: #d87497;
+      box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+      transition: all 1.1s; }
+    .main .button1 .button_spots:nth-of-type(4) {
+      transform-origin: 88px 17px;
+      background: #d474d8;
+      box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+      transition: all 1.2s; }
+    .main .button1 .button_spots:nth-of-type(5) {
+      transform-origin: 87px 14px;
+      background: #d0837c;
+      box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+      transition: all 1.9s; }
+    .main .button1 .button_spots:nth-of-type(6) {
+      transform-origin: 86px 14px;
+      background: #76ced6;
+      box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+      transition: all 1.5s; }
+    .main .button1 .button_spots:nth-of-type(7) {
+      transform-origin: 88px 18px;
+      background: #d5767a;
+      box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+      transition: all 1.8s; }
+    .main .button1 .button_spots:nth-of-type(8) {
+      transform-origin: 88px 11px;
+      background: #7e76d6;
+      box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+      transition: all 1.6s; }
+    .main .button1 .button_spots:nth-of-type(9) {
+      transform-origin: 86px 11px;
+      background: #c677d4;
+      box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+      transition: all 1.5s; }
+    .main .button1 .button_spots:nth-of-type(10) {
+      transform-origin: 82px 10px;
+      background: #cdd576;
+      box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+      transition: all 1.2s; }
+    .main .button1 .button_spots:nth-of-type(11) {
+      transform-origin: 86px 13px;
+      background: #7774d8;
+      box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+      transition: all 1.3s; }
+    .main .button1 .button_spots:nth-of-type(12) {
+      transform-origin: 83px 14px;
+      background: #d2798f;
+      box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+      transition: all 1.7s; }
+    .main .button1 .button_spots:nth-of-type(13) {
+      transform-origin: 83px 11px;
+      background: #a079d2;
+      box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+      transition: all 1.3s; }
+    .main .button1 .button_spots:nth-of-type(14) {
+      transform-origin: 85px 17px;
+      background: #d1c37a;
+      box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+      transition: all 1.1s; }
+    .main .button1 .button_spots:nth-of-type(15) {
+      transform-origin: 89px 14px;
+      background: #769bd6;
+      box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+      transition: all 1.9s; }
+    .main .button1 .button_spots:nth-of-type(16) {
+      transform-origin: 89px 19px;
+      background: #78d3a1;
+      box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+      transition: all 1.2s; }
+    .main .button1 .button_spots:nth-of-type(17) {
+      transform-origin: 83px 15px;
+      background: #8cd17b;
+      box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+      transition: all 2s; }
+    .main .button1 .button_spots:nth-of-type(18) {
+      transform-origin: 80px 15px;
+      background: #d07c87;
+      box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+      transition: all 1.9s; }
+    .main .button1 .button_spots:nth-of-type(19) {
+      transform-origin: 86px 10px;
+      background: #d0917c;
+      box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+      transition: all 1.6s; }
+    .main .button1 .button_spots:nth-of-type(20) {
+      transform-origin: 86px 18px;
+      background: #9f7bd1;
+      box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+      transition: all 1.4s; }
+    .main .button1 .button_spots:nth-of-type(21) {
+      transform-origin: 89px 10px;
+      background: #d775d7;
+      box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+      transition: all 1.9s; }
+    .main .button1 .button_spots:nth-of-type(22) {
+      transform-origin: 81px 19px;
+      background: #d19c7b;
+      box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+      transition: all 1.1s; }
+    .main .button1 .button_spots:nth-of-type(23) {
+      transform-origin: 82px 13px;
+      background: #b97cd0;
+      box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+      transition: all 1.3s; }
+    .main .button1 .button_spots:nth-of-type(24) {
+      transform-origin: 83px 15px;
+      background: #79cbd2;
+      box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+      transition: all 1.2s; }
+    .main .button1 .button_spots:nth-of-type(25) {
+      transform-origin: 85px 14px;
+      background: #d17b92;
+      box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+      transition: all 1.5s; }
+    .main .button1 .button_spots:nth-of-type(26) {
+      transform-origin: 81px 13px;
+      background: #79d287;
+      box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+      transition: all 1.1s; }
+    .main .button1 .button_spots:nth-of-type(27) {
+      transform-origin: 81px 19px;
+      background: #97d676;
+      box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+      transition: all 1.2s; }
+    .main .button1 .button_spots:nth-of-type(28) {
+      transform-origin: 82px 18px;
+      background: #d17aa1;
+      box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+      transition: all 1.7s; }
+    .main .button1 .button_spots:nth-of-type(29) {
+      transform-origin: 81px 18px;
+      background: #b075d7;
+      box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+      transition: all 1.9s; }
+    .main .button1 .button_spots:nth-of-type(30) {
+      transform-origin: 87px 11px;
+      background: #d1a07a;
+      box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+      transition: all 1.3s; }
+    .main .button1 .button_spots:nth-of-type(31) {
+      transform-origin: 89px 12px;
+      background: #d7758a;
+      box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+      transition: all 1.1s; }
+    .main .button1 .button_spots:nth-of-type(32) {
+      transform-origin: 85px 18px;
+      background: #7b75d7;
+      box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+      transition: all 2s; }
+    .main .button1 .button_spots:nth-of-type(33) {
+      transform-origin: 80px 16px;
+      background: #90d17b;
+      box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+      transition: all 1.8s; }
+    .main .button1 .button_spots:nth-of-type(34) {
+      transform-origin: 82px 18px;
+      background: #ad79d2;
+      box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+      transition: all 1.5s; }
+    .main .button1 .button_spots:nth-of-type(35) {
+      transform-origin: 87px 19px;
+      background: #9276d6;
+      box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+      transition: all 1.3s; }
+    .main .button1 .button_spots:nth-of-type(36) {
+      transform-origin: 81px 18px;
+      background: #d17a9c;
+      box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+      transition: all 1.8s; }
+    .main .button1 .button_spots:nth-of-type(37) {
+      transform-origin: 87px 11px;
+      background: #7479d8;
+      box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+      transition: all 2s; }
+    .main .button1 .button_spots:nth-of-type(38) {
+      transform-origin: 81px 13px;
+      background: #7ad1b6;
+      box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+      transition: all 1.5s; }
+    .main .button1 .button_spots:nth-of-type(39) {
+      transform-origin: 89px 12px;
+      background: #c47ad1;
+      box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+      transition: all 2s; }
+    .main .button1 .button_spots:nth-of-type(40) {
+      transform-origin: 80px 10px;
+      background: #7bd1c1;
+      box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+      transition: all 1.2s; }
+    .main .button1 .button_spots:nth-of-type(41) {
+      transform-origin: 81px 12px;
+      background: #b8d378;
+      box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+      transition: all 2s; }
+    .main .button1 .button_spots:nth-of-type(42) {
+      transform-origin: 80px 12px;
+      background: #d39b78;
+      box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+      transition: all 1.4s; }
+    .main .button1 .button_spots:nth-of-type(43) {
+      transform-origin: 87px 11px;
+      background: #d477ce;
+      box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+      transition: all 1.9s; }
+    .main .button1 .button_spots:nth-of-type(44) {
+      transform-origin: 85px 13px;
+      background: #76a6d6;
+      box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+      transition: all 1.8s; }
+    .main .button1 .button_spots:nth-of-type(45) {
+      transform-origin: 83px 12px;
+      background: #cbd279;
+      box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+      transition: all 1.5s; }
+    .main .button1 .button_spots:nth-of-type(46) {
+      transform-origin: 81px 16px;
+      background: #d17a8d;
+      box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+      transition: all 1.9s; }
+    .main .button1 .button_spots:nth-of-type(47) {
+      transform-origin: 88px 14px;
+      background: #77add4;
+      box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+      transition: all 1.1s; }
+    .main .button1 .button_spots:nth-of-type(48) {
+      transform-origin: 85px 19px;
+      background: #74d8b1;
+      box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+      transition: all 1.4s; }
+    .main .button1 .button_spots:nth-of-type(49) {
+      transform-origin: 85px 12px;
+      background: #78d397;
+      box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+      transition: all 1.1s; }
+    .main .button1 .button_spots:nth-of-type(50) {
+      transform-origin: 80px 14px;
+      background: #8474d8;
+      box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+      transition: all 1.2s; }
+    .main .button1 .button_spots:nth-of-type(51) {
+      transform-origin: 85px 18px;
+      background: #86d17a;
+      box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+      transition: all 1.5s; }
+    .main .button1 .button_spots:nth-of-type(52) {
+      transform-origin: 84px 16px;
+      background: #b2d07c;
+      box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+      transition: all 2s; }
+  .main .button1 .button_inner {
+    position: absolute;
+    width: 300px;
+    height: 150px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.04);
+    cursor: pointer;
+    text-align: Center;
+    transition: all .3s,box-shadow .2s,transform .2s .2s; }
+    .main .button1 .button_inner .button_spots:nth-of-type(1) {
+      animation: spot-1 0.7s 0.35s linear infinite; }
+    .main .button1 .button_inner .button_spots:nth-of-type(2) {
+      animation: spot-2 0.7s 0.5s linear infinite; }
+    .main .button1 .button_inner .button_spots:nth-of-type(3) {
+      animation: spot-3 0.7s 0.44444s linear infinite; }
+    .main .button1 .button_inner .button_spots:nth-of-type(4) {
+      animation: spot-4 0.7s 0.45s linear infinite; }
+    .main .button1 .button_inner .button_spots:nth-of-type(5) {
+      animation: spot-5 0.7s 0.75s linear infinite; }
+    .main .button1 .button_inner .button_spots:nth-of-type(6) {
+      animation: spot-6 0.7s 0.74444s linear infinite; }
+    .main .button1 .button_inner .button_spots:nth-of-type(7) {
+      animation: spot-7 0.7s 0.15s linear infinite; }
+    .main .button1 .button_inner .button_spots:nth-of-type(8) {
+      animation: spot-8 0.7s 1s linear infinite; }
+    .main .button1 .button_inner .button_spots:nth-of-type(9) {
+      animation: spot-9 0.7s 0.45s linear infinite; }
+    .main .button1 .button_inner .button_spots:nth-of-type(10) {
+      animation: spot-10 0.7s 0.84s linear infinite; }
+    .main .button1 .button_inner .button_spots:nth-of-type(11) {
+      animation: spot-11 0.7s 0.2s linear infinite; }
+    .main .button1 .button_inner .button_spots:nth-of-type(12) {
+      animation: spot-12 0.7s 0.14s linear infinite; }
+    .main .button1 .button_inner .button_spots:nth-of-type(13) {
+      animation: spot-13 0.7s 1s linear infinite; }
+    .main .button1 .button_inner .button_spots:nth-of-type(14) {
+      animation: spot-14 0.7s 1.2s linear infinite; }
+    .main .button1 .button_inner .button_spots:nth-of-type(15) {
+      animation: spot-15 0.7s 0.5s linear infinite; }
+    .main .button1 .button_inner .button_spots:nth-of-type(16) {
+      animation: spot-16 0.7s 0.6s linear infinite; }
+    .main .button1 .button_inner .button_spots:nth-of-type(17) {
+      animation: spot-17 0.7s 0.48s linear infinite; }
+    .main .button1 .button_inner .button_spots:nth-of-type(18) {
+      animation: spot-18 0.7s 0.48s linear infinite; }
+    .main .button1 .button_inner .button_spots:nth-of-type(19) {
+      animation: spot-19 0.7s 0.26667s linear infinite; }
+    .main .button1 .button_inner .button_spots:nth-of-type(20) {
+      animation: spot-20 0.7s 1.2s linear infinite; }
+    .main .button1 .button_inner .button_spots:nth-of-type(21) {
+      animation: spot-21 0.7s 0.94444s linear infinite; }
+    .main .button1 .button_inner .button_spots:nth-of-type(22) {
+      animation: spot-22 0.7s 0.5s linear infinite; }
+    .main .button1 .button_inner .button_spots:nth-of-type(23) {
+      animation: spot-23 0.7s 1.03333s linear infinite; }
+    .main .button1 .button_inner .button_spots:nth-of-type(24) {
+      animation: spot-24 0.7s 0.15714s linear infinite; }
+    .main .button1 .button_inner .button_spots:nth-of-type(25) {
+      animation: spot-25 0.7s 0.65s linear infinite; }
+    .main .button1 .button_inner .button_spots:nth-of-type(26) {
+      animation: spot-26 0.7s 1.04s linear infinite; }
+    .main .button1 .button_inner .button_spots:nth-of-type(27) {
+      animation: spot-27 0.7s 0.28s linear infinite; }
+    .main .button1 .button_inner .button_spots:nth-of-type(28) {
+      animation: spot-28 0.7s 0.85s linear infinite; }
+    .main .button1 .button_inner .button_spots:nth-of-type(29) {
+      animation: spot-29 0.7s 0.94s linear infinite; }
+    .main .button1 .button_inner .button_spots:nth-of-type(30) {
+      animation: spot-30 0.7s 0.64s linear infinite; }
+    .main .button1 .button_inner .button_spots:nth-of-type(31) {
+      animation: spot-31 0.7s 0.98s linear infinite; }
+    .main .button1 .button_inner .button_spots:nth-of-type(32) {
+      animation: spot-32 0.7s 1.05s linear infinite; }
+    .main .button1 .button_inner .button_spots:nth-of-type(33) {
+      animation: spot-33 0.7s 0.5s linear infinite; }
+    .main .button1 .button_inner .button_spots:nth-of-type(34) {
+      animation: spot-34 0.7s 0.63333s linear infinite; }
+    .main .button1 .button_inner .button_spots:nth-of-type(35) {
+      animation: spot-35 0.7s 0.7s linear infinite; }
+    .main .button1 .button_inner .button_spots:nth-of-type(36) {
+      animation: spot-36 0.7s 1.04444s linear infinite; }
+    .main .button1 .button_inner .button_spots:nth-of-type(37) {
+      animation: spot-37 0.7s 0.4s linear infinite; }
+    .main .button1 .button_inner .button_spots:nth-of-type(38) {
+      animation: spot-38 0.7s 1.03333s linear infinite; }
+    .main .button1 .button_inner .button_spots:nth-of-type(39) {
+      animation: spot-39 0.7s 0.85714s linear infinite; }
+    .main .button1 .button_inner .button_spots:nth-of-type(40) {
+      animation: spot-40 0.7s 0.23333s linear infinite; }
+    .main .button1 .button_inner .button_spots:nth-of-type(40) {
+      animation: spot-40 0.7s 0.4s linear infinite; }
+    .main .button1 .button_inner .button_spots:nth-of-type(41) {
+      animation: spot-41 0.7s 1s linear infinite; }
+    .main .button1 .button_inner .button_spots:nth-of-type(42) {
+      animation: spot-42 0.7s 0.3s linear infinite; }
+    .main .button1 .button_inner .button_spots:nth-of-type(43) {
+      animation: spot-43 0.7s 0.64444s linear infinite; }
+    .main .button1 .button_inner .button_spots:nth-of-type(44) {
+      animation: spot-44 0.7s 1.05s linear infinite; }
+    .main .button1 .button_inner .button_spots:nth-of-type(45) {
+      animation: spot-45 0.7s 0.83333s linear infinite; }
+    .main .button1 .button_inner .button_spots:nth-of-type(46) {
+      animation: spot-46 0.7s 1.05s linear infinite; }
+    .main .button1 .button_inner .button_spots:nth-of-type(46) {
+      animation: spot-46 0.7s 0.73333s linear infinite; }
+    .main .button1 .button_inner .button_spots:nth-of-type(47) {
+      animation: spot-47 0.7s 0.2s linear infinite; }
+    .main .button1 .button_inner .button_spots:nth-of-type(48) {
+      animation: spot-48 0.7s 0.76667s linear infinite; }
+    .main .button1 .button_inner .button_spots:nth-of-type(49) {
+      animation: spot-49 0.7s 0.6s linear infinite; }
+    .main .button1 .button_inner .button_spots:nth-of-type(50) {
+      animation: spot-50 0.7s 0.16667s linear infinite; }
+    .main .button1 .button_inner .button_spots:nth-of-type(51) {
+      animation: spot-51 0.7s 1.05s linear infinite; }
+    .main .button1 .button_inner .button_spots:nth-of-type(52) {
+      animation: spot-52 0.7s 0.7s linear infinite; }
+    .main .button1 .button_inner .button_spots:nth-of-type(53) {
+      animation: spot-53 0.7s 0.25s linear infinite; }
+    .main .button1 .button_inner .button_spots:nth-of-type(54) {
+      animation: spot-54 0.7s 1.2s linear infinite; }
+  @media (min-width: 375px) and (max-width: 767px) {
+    .main .button1 {
+      display: none !important; } }
+  .main .button2 {
+    margin-bottom: 180px;
+    display: none !important; }
+    .main .button2 .b_l_quad .button_spots:nth-child(1) {
+      padding: 3px;
+      left: 32px;
+      top: 100px; }
+    .main .button2 .b_l_quad .button_spots:nth-child(2) {
+      padding: 5px;
+      left: 44px;
+      top: 100px; }
+    .main .button2 .b_l_quad .button_spots:nth-child(3) {
+      padding: 4px;
+      left: 56px;
+      top: 100px; }
+    .main .button2 .b_l_quad .button_spots:nth-child(4) {
+      padding: 3px;
+      left: 68px;
+      top: 100px; }
+    .main .button2 .b_l_quad .button_spots:nth-child(5) {
+      padding: 3px;
+      left: 80px;
+      top: 100px; }
+    .main .button2 .b_l_quad .button_spots:nth-child(6) {
+      padding: 5px;
+      left: 92px;
+      top: 100px; }
+    .main .button2 .b_l_quad .button_spots:nth-child(7) {
+      padding: 4px;
+      left: 104px;
+      top: 100px; }
+    .main .button2 .b_l_quad .button_spots:nth-child(8) {
+      padding: 5px;
+      left: 116px;
+      top: 100px; }
+    .main .button2 .b_l_quad .button_spots:nth-child(9) {
+      padding: 5px;
+      left: 128px;
+      top: 100px; }
+    .main .button2 .b_l_quad .button_spots:nth-child(10) {
+      padding: 4px;
+      left: 140px;
+      top: 100px; }
+    .main .button2 .b_l_quad .button_spots:nth-child(11) {
+      padding: 5px;
+      left: 152px;
+      top: 100px; }
+    .main .button2 .b_l_quad .button_spots:nth-child(12) {
+      padding: 3px;
+      left: 164px;
+      top: 100px; }
+    .main .button2 .b_l_quad .button_spots:nth-child(13) {
+      padding: 5px;
+      left: 176px;
+      top: 100px; }
+    .main .button2 .b_l_quad .button_spots:nth-child(14) {
+      padding: 4px;
+      left: 188px;
+      top: 100px; }
+    .main .button2 .b_l_quad .button_spots:nth-child(15) {
+      padding: 3px;
+      left: 200px;
+      top: 100px; }
+    .main .button2 .b_l_quad .button_spots:nth-child(16) {
+      padding: 5px;
+      left: 212px;
+      top: 100px; }
+    .main .button2 .b_l_quad .button_spots:nth-child(17) {
+      padding: 5px;
+      left: 224px;
+      top: 100px; }
+    .main .button2 .b_l_quad .button_spots:nth-child(18) {
+      padding: 4px;
+      left: 236px;
+      top: 100px; }
+    .main .button2 .b_l_quad .button_spots:nth-child(19) {
+      padding: 3px;
+      left: 248px;
+      top: 100px; }
+    .main .button2 .b_l_quad .button_spots:nth-child(20) {
+      padding: 4px;
+      left: 260px;
+      top: 100px; }
+    .main .button2 .b_l_quad .button_spots:nth-child(20) {
+      padding: 4px;
+      left: 40px;
+      top: 30px; }
+    .main .button2 .b_l_quad .button_spots:nth-child(21) {
+      padding: 3px;
+      left: 52px;
+      top: 30px; }
+    .main .button2 .b_l_quad .button_spots:nth-child(22) {
+      padding: 4px;
+      left: 64px;
+      top: 30px; }
+    .main .button2 .b_l_quad .button_spots:nth-child(23) {
+      padding: 5px;
+      left: 76px;
+      top: 30px; }
+    .main .button2 .b_l_quad .button_spots:nth-child(24) {
+      padding: 3px;
+      left: 88px;
+      top: 30px; }
+    .main .button2 .b_l_quad .button_spots:nth-child(25) {
+      padding: 4px;
+      left: 100px;
+      top: 30px; }
+    .main .button2 .b_l_quad .button_spots:nth-child(26) {
+      padding: 3px;
+      left: 112px;
+      top: 30px; }
+    .main .button2 .b_l_quad .button_spots:nth-child(27) {
+      padding: 3px;
+      left: 124px;
+      top: 30px; }
+    .main .button2 .b_l_quad .button_spots:nth-child(28) {
+      padding: 4px;
+      left: 136px;
+      top: 30px; }
+    .main .button2 .b_l_quad .button_spots:nth-child(29) {
+      padding: 5px;
+      left: 148px;
+      top: 30px; }
+    .main .button2 .b_l_quad .button_spots:nth-child(30) {
+      padding: 5px;
+      left: 160px;
+      top: 30px; }
+    .main .button2 .b_l_quad .button_spots:nth-child(31) {
+      padding: 5px;
+      left: 172px;
+      top: 30px; }
+    .main .button2 .b_l_quad .button_spots:nth-child(32) {
+      padding: 3px;
+      left: 184px;
+      top: 30px; }
+    .main .button2 .b_l_quad .button_spots:nth-child(33) {
+      padding: 4px;
+      left: 196px;
+      top: 30px; }
+    .main .button2 .b_l_quad .button_spots:nth-child(34) {
+      padding: 4px;
+      left: 208px;
+      top: 30px; }
+    .main .button2 .b_l_quad .button_spots:nth-child(35) {
+      padding: 4px;
+      left: 220px;
+      top: 30px; }
+    .main .button2 .b_l_quad .button_spots:nth-child(36) {
+      padding: 3px;
+      left: 232px;
+      top: 30px; }
+    .main .button2 .b_l_quad .button_spots:nth-child(37) {
+      padding: 4px;
+      left: 244px;
+      top: 30px; }
+    .main .button2 .b_l_quad .button_spots:nth-child(38) {
+      padding: 4px;
+      left: 256px;
+      top: 30px; }
+    .main .button2 .b_l_quad .button_spots:nth-child(39) {
+      padding: 5px;
+      left: 268px;
+      top: 30px; }
+    .main .button2 .b_l_quad .button_spots:nth-child(40) {
+      padding: 3px;
+      left: 280px;
+      top: 30px; }
+    .main .button2 .b_l_quad .button_spots:nth-child(40) {
+      padding: 3px;
+      left: 240px;
+      top: 30px; }
+    .main .button2 .b_l_quad .button_spots:nth-child(41) {
+      padding: 3px;
+      left: 240px;
+      top: 42px; }
+    .main .button2 .b_l_quad .button_spots:nth-child(42) {
+      padding: 5px;
+      left: 240px;
+      top: 54px; }
+    .main .button2 .b_l_quad .button_spots:nth-child(43) {
+      padding: 3px;
+      left: 240px;
+      top: 66px; }
+    .main .button2 .b_l_quad .button_spots:nth-child(44) {
+      padding: 5px;
+      left: 240px;
+      top: 78px; }
+    .main .button2 .b_l_quad .button_spots:nth-child(45) {
+      padding: 5px;
+      left: 240px;
+      top: 90px; }
+    .main .button2 .b_l_quad .button_spots:nth-child(46) {
+      padding: 4px;
+      left: 240px;
+      top: 102px; }
+    .main .button2 .b_l_quad .button_spots:nth-child(46) {
+      padding: 4px;
+      left: 60px;
+      top: 2px; }
+    .main .button2 .b_l_quad .button_spots:nth-child(47) {
+      padding: 4px;
+      left: 60px;
+      top: 14px; }
+    .main .button2 .b_l_quad .button_spots:nth-child(48) {
+      padding: 5px;
+      left: 60px;
+      top: 26px; }
+    .main .button2 .b_l_quad .button_spots:nth-child(49) {
+      padding: 3px;
+      left: 60px;
+      top: 38px; }
+    .main .button2 .b_l_quad .button_spots:nth-child(50) {
+      padding: 3px;
+      left: 60px;
+      top: 50px; }
+    .main .button2 .b_l_quad .button_spots:nth-child(51) {
+      padding: 4px;
+      left: 60px;
+      top: 62px; }
+    .main .button2 .b_l_quad .button_spots:nth-child(52) {
+      padding: 5px;
+      left: 60px;
+      top: 74px; }
+    .main .button2 .button_spots {
+      position: absolute;
+      border-radius: 100px;
+      background: green;
+      opacity: 0;
+      animation: opacity 1s; }
+      .main .button2 .button_spots:nth-of-type(1) {
+        transform-origin: 81px 19px;
+        background: #74d886;
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+        transition: all 2s; }
+      .main .button2 .button_spots:nth-of-type(2) {
+        transform-origin: 80px 17px;
+        background: #7bd189;
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+        transition: all 1.7s; }
+      .main .button2 .button_spots:nth-of-type(3) {
+        transform-origin: 85px 17px;
+        background: #77d4b7;
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+        transition: all 2s; }
+      .main .button2 .button_spots:nth-of-type(4) {
+        transform-origin: 82px 11px;
+        background: #74c5d8;
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+        transition: all 1.5s; }
+      .main .button2 .button_spots:nth-of-type(5) {
+        transform-origin: 88px 14px;
+        background: #95d17b;
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+        transition: all 1.2s; }
+      .main .button2 .button_spots:nth-of-type(6) {
+        transform-origin: 84px 14px;
+        background: #9b77d4;
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+        transition: all 1.7s; }
+      .main .button2 .button_spots:nth-of-type(7) {
+        transform-origin: 83px 18px;
+        background: #798fd2;
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+        transition: all 1.5s; }
+      .main .button2 .button_spots:nth-of-type(8) {
+        transform-origin: 84px 12px;
+        background: #a974d8;
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+        transition: all 1.6s; }
+      .main .button2 .button_spots:nth-of-type(9) {
+        transform-origin: 88px 16px;
+        background: #d88874;
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+        transition: all 1.5s; }
+      .main .button2 .button_spots:nth-of-type(10) {
+        transform-origin: 83px 13px;
+        background: #96d576;
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+        transition: all 1.6s; }
+      .main .button2 .button_spots:nth-of-type(11) {
+        transform-origin: 83px 12px;
+        background: #d7759e;
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+        transition: all 1.4s; }
+      .main .button2 .button_spots:nth-of-type(12) {
+        transform-origin: 85px 11px;
+        background: #d279c9;
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+        transition: all 1.5s; }
+      .main .button2 .button_spots:nth-of-type(13) {
+        transform-origin: 80px 11px;
+        background: #cb7bd1;
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+        transition: all 1.4s; }
+      .main .button2 .button_spots:nth-of-type(14) {
+        transform-origin: 88px 17px;
+        background: #77d3d4;
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+        transition: all 1.2s; }
+      .main .button2 .button_spots:nth-of-type(15) {
+        transform-origin: 86px 11px;
+        background: #8fd676;
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+        transition: all 1.5s; }
+      .main .button2 .button_spots:nth-of-type(16) {
+        transform-origin: 88px 10px;
+        background: #7ad676;
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+        transition: all 1.5s; }
+      .main .button2 .button_spots:nth-of-type(17) {
+        transform-origin: 82px 18px;
+        background: #77d488;
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+        transition: all 1.5s; }
+      .main .button2 .button_spots:nth-of-type(18) {
+        transform-origin: 83px 12px;
+        background: #d89074;
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+        transition: all 1.1s; }
+      .main .button2 .button_spots:nth-of-type(19) {
+        transform-origin: 83px 19px;
+        background: #d17b89;
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+        transition: all 1.3s; }
+      .main .button2 .button_spots:nth-of-type(20) {
+        transform-origin: 82px 15px;
+        background: #b07cd0;
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+        transition: all 2s; }
+      .main .button2 .button_spots:nth-of-type(21) {
+        transform-origin: 88px 17px;
+        background: #d477c8;
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+        transition: all 1.9s; }
+      .main .button2 .button_spots:nth-of-type(22) {
+        transform-origin: 85px 19px;
+        background: #ced17b;
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+        transition: all 1.8s; }
+      .main .button2 .button_spots:nth-of-type(23) {
+        transform-origin: 83px 19px;
+        background: #d49c77;
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+        transition: all 1.5s; }
+      .main .button2 .button_spots:nth-of-type(24) {
+        transform-origin: 86px 12px;
+        background: #d7758d;
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+        transition: all 1.6s; }
+      .main .button2 .button_spots:nth-of-type(25) {
+        transform-origin: 87px 17px;
+        background: #b3d17b;
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+        transition: all 1.7s; }
+      .main .button2 .button_spots:nth-of-type(26) {
+        transform-origin: 84px 16px;
+        background: #797bd2;
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+        transition: all 1.2s; }
+      .main .button2 .button_spots:nth-of-type(27) {
+        transform-origin: 81px 15px;
+        background: #d6769e;
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+        transition: all 1.9s; }
+      .main .button2 .button_spots:nth-of-type(28) {
+        transform-origin: 80px 15px;
+        background: #d27991;
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+        transition: all 1.3s; }
+      .main .button2 .button_spots:nth-of-type(29) {
+        transform-origin: 80px 14px;
+        background: #847cd0;
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+        transition: all 1.1s; }
+      .main .button2 .button_spots:nth-of-type(30) {
+        transform-origin: 89px 12px;
+        background: #7679d6;
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+        transition: all 1.2s; }
+      .main .button2 .button_spots:nth-of-type(31) {
+        transform-origin: 87px 16px;
+        background: #758ad7;
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+        transition: all 2s; }
+      .main .button2 .button_spots:nth-of-type(32) {
+        transform-origin: 87px 14px;
+        background: #a6d17a;
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+        transition: all 2s; }
+      .main .button2 .button_spots:nth-of-type(33) {
+        transform-origin: 84px 10px;
+        background: #8ed676;
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+        transition: all 1.7s; }
+      .main .button2 .button_spots:nth-of-type(34) {
+        transform-origin: 88px 17px;
+        background: #d376d6;
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+        transition: all 1.3s; }
+      .main .button2 .button_spots:nth-of-type(35) {
+        transform-origin: 85px 11px;
+        background: #7689d6;
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+        transition: all 1.3s; }
+      .main .button2 .button_spots:nth-of-type(36) {
+        transform-origin: 82px 16px;
+        background: #d27f79;
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+        transition: all 1.4s; }
+      .main .button2 .button_spots:nth-of-type(37) {
+        transform-origin: 81px 11px;
+        background: #79d29a;
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+        transition: all 1.4s; }
+      .main .button2 .button_spots:nth-of-type(38) {
+        transform-origin: 88px 18px;
+        background: #d59476;
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+        transition: all 1.8s; }
+      .main .button2 .button_spots:nth-of-type(39) {
+        transform-origin: 85px 14px;
+        background: #d1957b;
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+        transition: all 1.2s; }
+      .main .button2 .button_spots:nth-of-type(40) {
+        transform-origin: 83px 12px;
+        background: #bad477;
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+        transition: all 1.2s; }
+      .main .button2 .button_spots:nth-of-type(41) {
+        transform-origin: 81px 10px;
+        background: #81d477;
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+        transition: all 1.3s; }
+      .main .button2 .button_spots:nth-of-type(42) {
+        transform-origin: 85px 14px;
+        background: #74d89a;
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+        transition: all 1.6s; }
+      .main .button2 .button_spots:nth-of-type(43) {
+        transform-origin: 86px 17px;
+        background: #d0947c;
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+        transition: all 1.9s; }
+      .main .button2 .button_spots:nth-of-type(44) {
+        transform-origin: 89px 16px;
+        background: #d5ba76;
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+        transition: all 1.7s; }
+      .main .button2 .button_spots:nth-of-type(45) {
+        transform-origin: 84px 16px;
+        background: #d874b0;
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+        transition: all 1.8s; }
+      .main .button2 .button_spots:nth-of-type(46) {
+        transform-origin: 80px 10px;
+        background: #a37bd1;
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+        transition: all 1.1s; }
+      .main .button2 .button_spots:nth-of-type(47) {
+        transform-origin: 81px 19px;
+        background: #78d3a1;
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+        transition: all 1.7s; }
+      .main .button2 .button_spots:nth-of-type(48) {
+        transform-origin: 80px 17px;
+        background: #d6a176;
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+        transition: all 2s; }
+      .main .button2 .button_spots:nth-of-type(49) {
+        transform-origin: 85px 13px;
+        background: #bf7bd1;
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+        transition: all 1.5s; }
+      .main .button2 .button_spots:nth-of-type(50) {
+        transform-origin: 88px 10px;
+        background: #7ed279;
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+        transition: all 1.2s; }
+      .main .button2 .button_spots:nth-of-type(51) {
+        transform-origin: 89px 11px;
+        background: #88d07c;
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+        transition: all 1.2s; }
+      .main .button2 .button_spots:nth-of-type(52) {
+        transform-origin: 89px 19px;
+        background: #d1907a;
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);
+        transition: all 1.1s; }
+    .main .button2 .button_inner {
+      position: absolute;
+      width: 300px;
+      height: 150px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.04);
+      cursor: pointer;
+      text-align: Center;
+      transition: all .3s,box-shadow .2s,transform .2s .2s; }
+      .main .button2 .button_inner .button_spots:nth-of-type(1) {
+        animation: spot-1 0.7s 1.04444s linear infinite; }
+      .main .button2 .button_inner .button_spots:nth-of-type(2) {
+        animation: spot-2 0.7s 0.8s linear infinite; }
+      .main .button2 .button_inner .button_spots:nth-of-type(3) {
+        animation: spot-3 0.7s 0.64444s linear infinite; }
+      .main .button2 .button_inner .button_spots:nth-of-type(4) {
+        animation: spot-4 0.7s 1.4s linear infinite; }
+      .main .button2 .button_inner .button_spots:nth-of-type(5) {
+        animation: spot-5 0.7s 0.95714s linear infinite; }
+      .main .button2 .button_inner .button_spots:nth-of-type(6) {
+        animation: spot-6 0.7s 0.94444s linear infinite; }
+      .main .button2 .button_inner .button_spots:nth-of-type(7) {
+        animation: spot-7 0.7s 0.15s linear infinite; }
+      .main .button2 .button_inner .button_spots:nth-of-type(8) {
+        animation: spot-8 0.7s 0.38s linear infinite; }
+      .main .button2 .button_inner .button_spots:nth-of-type(9) {
+        animation: spot-9 0.7s 1s linear infinite; }
+      .main .button2 .button_inner .button_spots:nth-of-type(10) {
+        animation: spot-10 0.7s 0.84444s linear infinite; }
+      .main .button2 .button_inner .button_spots:nth-of-type(11) {
+        animation: spot-11 0.7s 1.06667s linear infinite; }
+      .main .button2 .button_inner .button_spots:nth-of-type(12) {
+        animation: spot-12 0.7s 0.46667s linear infinite; }
+      .main .button2 .button_inner .button_spots:nth-of-type(13) {
+        animation: spot-13 0.7s 1s linear infinite; }
+      .main .button2 .button_inner .button_spots:nth-of-type(14) {
+        animation: spot-14 0.7s 1.4s linear infinite; }
+      .main .button2 .button_inner .button_spots:nth-of-type(15) {
+        animation: spot-15 0.7s 0.83333s linear infinite; }
+      .main .button2 .button_inner .button_spots:nth-of-type(16) {
+        animation: spot-16 0.7s 0.7s linear infinite; }
+      .main .button2 .button_inner .button_spots:nth-of-type(17) {
+        animation: spot-17 0.7s 0.75s linear infinite; }
+      .main .button2 .button_inner .button_spots:nth-of-type(18) {
+        animation: spot-18 0.7s 0.4s linear infinite; }
+      .main .button2 .button_inner .button_spots:nth-of-type(19) {
+        animation: spot-19 0.7s 0.6s linear infinite; }
+      .main .button2 .button_inner .button_spots:nth-of-type(20) {
+        animation: spot-20 0.7s 0.76667s linear infinite; }
+      .main .button2 .button_inner .button_spots:nth-of-type(21) {
+        animation: spot-21 0.7s 0.2s linear infinite; }
+      .main .button2 .button_inner .button_spots:nth-of-type(22) {
+        animation: spot-22 0.7s 0.74s linear infinite; }
+      .main .button2 .button_inner .button_spots:nth-of-type(23) {
+        animation: spot-23 0.7s 0.55s linear infinite; }
+      .main .button2 .button_inner .button_spots:nth-of-type(24) {
+        animation: spot-24 0.7s 0.25714s linear infinite; }
+      .main .button2 .button_inner .button_spots:nth-of-type(25) {
+        animation: spot-25 0.7s 0.3s linear infinite; }
+      .main .button2 .button_inner .button_spots:nth-of-type(26) {
+        animation: spot-26 0.7s 0.75714s linear infinite; }
+      .main .button2 .button_inner .button_spots:nth-of-type(27) {
+        animation: spot-27 0.7s 0.75714s linear infinite; }
+      .main .button2 .button_inner .button_spots:nth-of-type(28) {
+        animation: spot-28 0.7s 1.03333s linear infinite; }
+      .main .button2 .button_inner .button_spots:nth-of-type(29) {
+        animation: spot-29 0.7s 0.25714s linear infinite; }
+      .main .button2 .button_inner .button_spots:nth-of-type(30) {
+        animation: spot-30 0.7s 0.9s linear infinite; }
+      .main .button2 .button_inner .button_spots:nth-of-type(31) {
+        animation: spot-31 0.7s 1s linear infinite; }
+      .main .button2 .button_inner .button_spots:nth-of-type(32) {
+        animation: spot-32 0.7s 0.24444s linear infinite; }
+      .main .button2 .button_inner .button_spots:nth-of-type(33) {
+        animation: spot-33 0.7s 0.24s linear infinite; }
+      .main .button2 .button_inner .button_spots:nth-of-type(34) {
+        animation: spot-34 0.7s 0.74444s linear infinite; }
+      .main .button2 .button_inner .button_spots:nth-of-type(35) {
+        animation: spot-35 0.7s 1.2s linear infinite; }
+      .main .button2 .button_inner .button_spots:nth-of-type(36) {
+        animation: spot-36 0.7s 0.96667s linear infinite; }
+      .main .button2 .button_inner .button_spots:nth-of-type(37) {
+        animation: spot-37 0.7s 0.14s linear infinite; }
+      .main .button2 .button_inner .button_spots:nth-of-type(38) {
+        animation: spot-38 0.7s 1.1s linear infinite; }
+      .main .button2 .button_inner .button_spots:nth-of-type(39) {
+        animation: spot-39 0.7s 0.74444s linear infinite; }
+      .main .button2 .button_inner .button_spots:nth-of-type(40) {
+        animation: spot-40 0.7s 1s linear infinite; }
+      .main .button2 .button_inner .button_spots:nth-of-type(40) {
+        animation: spot-40 0.7s 1.05714s linear infinite; }
+      .main .button2 .button_inner .button_spots:nth-of-type(41) {
+        animation: spot-41 0.7s 0.7s linear infinite; }
+      .main .button2 .button_inner .button_spots:nth-of-type(42) {
+        animation: spot-42 0.7s 0.85714s linear infinite; }
+      .main .button2 .button_inner .button_spots:nth-of-type(43) {
+        animation: spot-43 0.7s 0.14444s linear infinite; }
+      .main .button2 .button_inner .button_spots:nth-of-type(44) {
+        animation: spot-44 0.7s 0.7s linear infinite; }
+      .main .button2 .button_inner .button_spots:nth-of-type(45) {
+        animation: spot-45 0.7s 0.68s linear infinite; }
+      .main .button2 .button_inner .button_spots:nth-of-type(46) {
+        animation: spot-46 0.7s 0.15s linear infinite; }
+      .main .button2 .button_inner .button_spots:nth-of-type(46) {
+        animation: spot-46 0.7s 0.5s linear infinite; }
+      .main .button2 .button_inner .button_spots:nth-of-type(47) {
+        animation: spot-47 0.7s 1.03333s linear infinite; }
+      .main .button2 .button_inner .button_spots:nth-of-type(48) {
+        animation: spot-48 0.7s 1.1s linear infinite; }
+      .main .button2 .button_inner .button_spots:nth-of-type(49) {
+        animation: spot-49 0.7s 0.16667s linear infinite; }
+      .main .button2 .button_inner .button_spots:nth-of-type(50) {
+        animation: spot-50 0.7s 0.33333s linear infinite; }
+      .main .button2 .button_inner .button_spots:nth-of-type(51) {
+        animation: spot-51 0.7s 0.83333s linear infinite; }
+      .main .button2 .button_inner .button_spots:nth-of-type(52) {
+        animation: spot-52 0.7s 0.45s linear infinite; }
+      .main .button2 .button_inner .button_spots:nth-of-type(53) {
+        animation: spot-53 0.7s 0.55714s linear infinite; }
+      .main .button2 .button_inner .button_spots:nth-of-type(54) {
+        animation: spot-54 0.7s 0.4s linear infinite; }
+    @media (min-width: 375px) and (max-width: 767px) {
+      .main .button2 .animated-button1 {
+        width: 150px; } }
+    @media (min-width: 375px) and (max-width: 767px) {
+      .main .button2 {
+        display: block !important; } }
+  @media (min-width: 375px) and (max-width: 767px) {
+    .main .item-txt1 {
+      display: none !important; } }
+  .main .item-txt2 {
+    margin-top: 80px;
+    display: none !important; }
+    @media (min-width: 375px) and (max-width: 767px) {
+      .main .item-txt2 {
+        display: flex !important; } }
+  .main__center__fs {
+    font-size: 38px; }
+    @media (min-width: 375px) and (max-width: 767px) {
+      .main__center__fs {
+        font-size: 38px; } }
+    @media (min-width: 1366px) {
+      .main__center__fs {
+        font-size: 52px; } }
+  .main__center .btn-play {
+    background-color: white;
+    text-transform: uppercase !important;
+    border: none;
+    outline: 0;
+    width: 150px;
+    text-transform: uppercase !important; }
+    .main__center .btn-play:hover .btn-play__txt {
+      color: red; }
+    .main__center .btn-play:active {
+      background: linear-gradient(-30deg, #e4e4e4 50%, #d0dbff 50%); }
+    @media (min-width: 375px) and (max-width: 767px) {
+      .main__center .btn-play {
+        width: 100px;
+        padding: 0 !important;
+        order: 3; } }
+    @media (min-width: 1366px) {
+      .main__center .btn-play {
+        width: 200px; } }
+    .main__center .btn-play__txt {
+      text-transform: uppercase; }
+      @media (min-width: 375px) and (max-width: 767px) {
+        .main__center .btn-play__txt {
+          font-size: 14px;
+          padding: 0 0 4px !important; } }
+      @media (min-width: 1366px) {
+        .main__center .btn-play__txt {
+          font-size: 20px;
+          letter-spacing: 3px; } }
+  .main__right {
+    background-color: #EFEFEF;
+    width: 150px;
+    height: 150px;
+    border: solid 20px #536EF7;
+    box-shadow: 0px 6px #2945C3;
+    -moz-box-shadow: 0px 6px #2945C3;
+    -webkit-box-shadow: 0px 6px #2945C3;
+    -o-box-shadow: 0px 6px #2945C3;
+    border-radius: 100%; }
+    @media (min-width: 375px) and (max-width: 767px) {
+      .main__right {
+        width: 100px;
+        height: 100px;
+        border: solid 16px #536EF7;
+        box-shadow: 0px 4px #2945C3;
+        -moz-box-shadow: 0px 4px #2945C3;
+        -webkit-box-shadow: 0px 4px #2945C3;
+        -o-box-shadow: 0px 4px #2945C3; } }
+    @media (min-width: 1366px) {
+      .main__right {
+        width: 250px;
+        height: 250px;
+        border: solid 26px #536EF7;
+        box-shadow: 0px 8px #2945C3;
+        -moz-box-shadow: 0px 8px #2945C3;
+        -webkit-box-shadow: 0px 8px #2945C3;
+        -o-box-shadow: 0px 8px #2945C3; } }
+    .main__right .main__circle__bd {
+      width: 110px;
+      box-shadow: inset 0px 6px 0px #BAC0D5;
+      padding: 24px;
+      border-radius: 100%; }
+      @media (min-width: 375px) and (max-width: 767px) {
+        .main__right .main__circle__bd {
+          width: initial;
+          box-shadow: inset 0px 4px 0px #BAC0D5;
+          padding: 12px; } }
+      @media (min-width: 1366px) {
+        .main__right .main__circle__bd {
+          width: 198px;
+          box-shadow: inset 0px 8px 0px #BAC0D5;
+          padding: 50px 68px 48px 52px; } }
+    @media (min-width: 375px) and (max-width: 767px) {
+      .main__right .main__circle__img {
+        width: 40px; } }
+    @media (min-width: 1366px) {
+      .main__right .main__circle__img {
+        width: 80px; } }
+  .main__bottom {
+    position: absolute;
+    right: 28px;
+    bottom: 20px; }
+    @media (min-width: 375px) and (max-width: 767px) {
+      .main__bottom {
+        position: relative;
+        right: 0;
+        margin-top: 100px; } }
+
+.modal-header {
+  color: #3D4262 !important;
+  background-color: #e3e8ff; }

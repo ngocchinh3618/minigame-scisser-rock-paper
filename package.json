@@ -1,0 +1,16 @@
+{
+  "name": "minigame-scissors-hammer-bag",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-sass": "node-sass app/styles/sass/main.scss app/styles/css/main.css",
+    "watch-sass": "node-sass -w app/styles/sass/main.scss app/styles/css/main.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  }
+}

@@ -1,0 +1,55 @@
+.article {
+  margin: auto;
+  height: 410px;
+  width: 450px;
+  position: relative;
+  background-image: url(../../../images/bg-triangle.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 400px 340px;
+  flex-wrap: wrap;
+
+  @include mobile {
+    padding: 80px;
+    width: 300px;
+    height: 280px;
+    background-size: 312px 264px;
+  }
+
+  &__left {
+    position: absolute;
+    left: 4px;
+    @include box__blue1;
+
+    @include mobile {
+      left: -16px;
+      top: -28px;
+    }
+  }
+
+  &__center {
+    bottom: 0px;
+    position: absolute;
+    @include box__pink1;
+
+    @include mobile {
+      bottom: 0;
+    }
+  }
+
+  &__right {
+    right: 4px;
+    position: absolute;
+    @include box__yellow1;
+
+    @include mobile {
+      right: -16px;
+      top: -28px;
+    }
+  }
+
+  // &__bd {
+  //   @include box__yellow__bd;
+  // }
+
+}

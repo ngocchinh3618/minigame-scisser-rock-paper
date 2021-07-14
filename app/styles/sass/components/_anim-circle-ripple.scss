@@ -1,0 +1,20 @@
+// circle ripple aminations
+@mixin circle-ripple {
+  animation: ripple 0.8s linear infinite;
+
+  @keyframes ripple {
+    0% {
+      box-shadow: 0 0 0 0 rgba($DarkBlue-500, 0.3),
+        0 0 0 1em rgba($DarkBlue-500, 0.3),
+        0 0 0 3em rgba($DarkBlue-500, 0.3),
+        0 0 0 5em rgba($DarkBlue-500, 0.3);
+    }
+
+    100% {
+      box-shadow: 0 0 0 1em rgba($DarkBlue-500, 0.3),
+        0 0 0 3em rgba($DarkBlue-500, 0.3),
+        0 0 0 5em rgba($DarkBlue-500, 0.3),
+        0 0 0 8em rgba($DarkBlue-500, 0);
+    }
+  }
+}
