@@ -977,7 +977,7 @@ template {
     @media (min-width: 1366px) {
       .main__left .main__circle__img {
         width: 80px; } }
-  .main .circle-blue {
+  .main .circle-paper {
     background-color: #EFEFEF;
     width: 150px;
     height: 150px;
@@ -988,7 +988,7 @@ template {
     -o-box-shadow: 0px 6px #2945C3;
     border-radius: 100%; }
     @media (min-width: 375px) and (max-width: 767px) {
-      .main .circle-blue {
+      .main .circle-paper {
         width: 100px;
         height: 100px;
         border: solid 16px #536EF7;
@@ -997,7 +997,7 @@ template {
         -webkit-box-shadow: 0px 4px #2945C3;
         -o-box-shadow: 0px 4px #2945C3; } }
     @media (min-width: 1366px) {
-      .main .circle-blue {
+      .main .circle-paper {
         width: 250px;
         height: 250px;
         border: solid 26px #536EF7;
@@ -1005,28 +1005,28 @@ template {
         -moz-box-shadow: 0px 8px #2945C3;
         -webkit-box-shadow: 0px 8px #2945C3;
         -o-box-shadow: 0px 8px #2945C3; } }
-    .main .circle-blue .main__circle__bd {
+    .main .circle-paper .main__circle__bd {
       width: 110px;
       box-shadow: inset 0px 6px 0px #BAC0D5;
       padding: 24px;
       border-radius: 100%; }
       @media (min-width: 375px) and (max-width: 767px) {
-        .main .circle-blue .main__circle__bd {
+        .main .circle-paper .main__circle__bd {
           width: initial;
           box-shadow: inset 0px 4px 0px #BAC0D5;
           padding: 12px; } }
       @media (min-width: 1366px) {
-        .main .circle-blue .main__circle__bd {
+        .main .circle-paper .main__circle__bd {
           width: 198px;
           box-shadow: inset 0px 8px 0px #BAC0D5;
           padding: 50px 68px 48px 52px; } }
     @media (min-width: 375px) and (max-width: 767px) {
-      .main .circle-blue .main__circle__img {
+      .main .circle-paper .main__circle__img {
         width: 40px; } }
     @media (min-width: 1366px) {
-      .main .circle-blue .main__circle__img {
+      .main .circle-paper .main__circle__img {
         width: 80px; } }
-  .main .circle-yellow {
+  .main .circle-scissors {
     background-color: #EFEFEF;
     width: 150px;
     height: 150px;
@@ -1037,7 +1037,7 @@ template {
     -o-box-shadow: 0px 6px #C66B19;
     border-radius: 100%; }
     @media (min-width: 375px) and (max-width: 767px) {
-      .main .circle-yellow {
+      .main .circle-scissors {
         width: 100px;
         height: 100px;
         border: solid 16px #EDA51D;
@@ -1046,7 +1046,7 @@ template {
         -webkit-box-shadow: 0px 4px #C66B19;
         -o-box-shadow: 0px 4px #C66B19; } }
     @media (min-width: 1366px) {
-      .main .circle-yellow {
+      .main .circle-scissors {
         width: 250px;
         height: 250px;
         border: solid 26px #EDA51D;
@@ -1054,28 +1054,28 @@ template {
         -moz-box-shadow: 0px 8px #C66B19;
         -webkit-box-shadow: 0px 8px #C66B19;
         -o-box-shadow: 0px 8px #C66B19; } }
-    .main .circle-yellow .main__circle__bd {
+    .main .circle-scissors .main__circle__bd {
       width: 110px;
       box-shadow: inset 0px 6px 0px #BAC0D5;
       padding: 24px;
       border-radius: 100%; }
       @media (min-width: 375px) and (max-width: 767px) {
-        .main .circle-yellow .main__circle__bd {
+        .main .circle-scissors .main__circle__bd {
           width: initial;
           box-shadow: inset 0px 4px 0px #BAC0D5;
           padding: 12px; } }
       @media (min-width: 1366px) {
-        .main .circle-yellow .main__circle__bd {
+        .main .circle-scissors .main__circle__bd {
           width: 198px;
           box-shadow: inset 0px 8px 0px #BAC0D5;
           padding: 50px 68px 48px 52px; } }
     @media (min-width: 375px) and (max-width: 767px) {
-      .main .circle-yellow .main__circle__img {
+      .main .circle-scissors .main__circle__img {
         width: 40px; } }
     @media (min-width: 1366px) {
-      .main .circle-yellow .main__circle__img {
+      .main .circle-scissors .main__circle__img {
         width: 80px; } }
-  .main .circle-pink {
+  .main .circle-rock {
     background-color: #EFEFEF;
     width: 150px;
     height: 150px;
@@ -1086,7 +1086,7 @@ template {
     -o-box-shadow: 0px 6px #9D1732;
     border-radius: 100%; }
     @media (min-width: 375px) and (max-width: 767px) {
-      .main .circle-pink {
+      .main .circle-rock {
         width: 100px;
         height: 100px;
         border: solid 16px #DB2D4D;
@@ -1095,7 +1095,7 @@ template {
         -webkit-box-shadow: 0px 4px #9D1732;
         -o-box-shadow: 0px 4px #9D1732; } }
     @media (min-width: 1366px) {
-      .main .circle-pink {
+      .main .circle-rock {
         width: 250px;
         height: 250px;
         border: solid 26px #DB2D4D;
@@ -1103,26 +1103,26 @@ template {
         -moz-box-shadow: 0px 8px #9D1732;
         -webkit-box-shadow: 0px 8px #9D1732;
         -o-box-shadow: 0px 8px #9D1732; } }
-    .main .circle-pink .main__circle__bd {
+    .main .circle-rock .main__circle__bd {
       width: 110px;
       box-shadow: inset 0px 6px 0px #BAC0D5;
       padding: 24px;
       border-radius: 100%; }
       @media (min-width: 375px) and (max-width: 767px) {
-        .main .circle-pink .main__circle__bd {
+        .main .circle-rock .main__circle__bd {
           width: initial;
           box-shadow: inset 0px 4px 0px #BAC0D5;
           padding: 12px; } }
       @media (min-width: 1366px) {
-        .main .circle-pink .main__circle__bd {
+        .main .circle-rock .main__circle__bd {
           width: 198px;
           box-shadow: inset 0px 8px 0px #BAC0D5;
           padding: 50px 68px 48px 52px; } }
     @media (min-width: 375px) and (max-width: 767px) {
-      .main .circle-pink .main__circle__img {
+      .main .circle-rock .main__circle__img {
         width: 40px; } }
     @media (min-width: 1366px) {
-      .main .circle-pink .main__circle__img {
+      .main .circle-rock .main__circle__img {
         width: 80px; } }
   @media (min-width: 375px) and (max-width: 767px) {
     .main .item-center1 {

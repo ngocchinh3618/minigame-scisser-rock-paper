@@ -1,36 +1,14 @@
 document.addEventListener("DOMContentLoaded", function() {
   document.getElementById("score").innerHTML = window.localStorage.getItem('score')? window.localStorage.getItem('score') : 0;
-  // console.log(window.localStorage.getItem('score'))
-  var url = new URL(window.location.href);
-  var choose = url.searchParams.get("choose");
-  var hands = ["paper","rock","scissors"];
-  if(hands[choose] === "paper"){
-    document.getElementById("imgLeft").src = "images/icon-paper.svg";
-    document.getElementById("mainleft").className = "circle-blue";
-  }
-  else if(hands[choose] === "rock"){
-    document.getElementById("imgLeft").src = "images/icon-rock.svg";
-    document.getElementById("mainleft").className = "circle-pink";
-  }
-  else{
-    document.getElementById("imgLeft").src = "images/icon-scissors.svg";
-    document.getElementById("mainleft").className = "circle-yellow";
-  }
+  const url = new URL(window.location.href);
+  const choose = url.searchParams.get("choose");
+  const hands = ["paper","rock","scissors"];
+  document.getElementById("imgLeft").src = `images/icon-${hands[choose]}.svg`;
+  document.getElementById("mainleft").className = `circle-${hands[choose]}`;
   
-  var index = Math.round(Math.random() * 2);
-
-  if(hands[index] === "paper"){
-    document.getElementById("imgRight").src = "images/icon-paper.svg";
-    document.getElementById("mainRight").className = "circle-blue";
-  }
-  else if(hands[index] === "rock"){
-    document.getElementById("imgRight").src = "images/icon-rock.svg";
-    document.getElementById("mainRight").className = "circle-pink";
-  }
-  else{
-    document.getElementById("imgRight").src = "images/icon-scissors.svg";
-    document.getElementById("mainRight").className = "circle-yellow";
-  }
+  const index = Math.round(Math.random() * 2);
+  document.getElementById("imgRight").src = `images/icon-${hands[index]}.svg`;
+  document.getElementById("mainRight").className = `circle-${hands[index]}`;
 
   if (choose == index) {
     document.getElementById("result").innerHTML="Draw!!!"
@@ -53,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 function clickAgain(){
-  window.location.href = window.location.origin
+  window.open('./index.html','_self')
 }
 
 function addScore(score){
